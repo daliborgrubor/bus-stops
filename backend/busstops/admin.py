@@ -1,9 +1,7 @@
 from django.contrib import admin
-from .models import StopPoint
+from .models import BusStops
 
-class StopPointAdmin(admin.ModelAdmin):
+class BusStopsAdmin(admin.ModelAdmin):
     list_display = ('title', 'description', 'completed')
 
-# Register your models here.
-
-admin.site.register(StopPoint, StopPointAdmin)
+admin.site.register(BusStops, BusStopsAdmin)

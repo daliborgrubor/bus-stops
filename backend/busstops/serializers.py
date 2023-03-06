@@ -1,7 +1,7 @@
 from rest_framework import serializers
-from .models import StopPoint
+from .models import BusStops
 
-class StopPointSerializer(serializers.ModelSerializer):
+class BusStopsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = StopPoint
+        model = BusStops
         fields = ('id', 'title', 'description', 'completed')
