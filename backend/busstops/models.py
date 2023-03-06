@@ -2,8 +2,8 @@ from django.db import models
 
 class BusStops(models.Model):
     title = models.CharField(max_length=120)
-    description = models.TextField()
-    completed = models.BooleanField(default=False)
+    latitude = models.TextField(blank=True, null=True)
+    longitude = models.TextField(blank=True, null=True)
 
     def _str_(self):
         return self.title
