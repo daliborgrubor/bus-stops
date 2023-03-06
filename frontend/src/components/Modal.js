@@ -18,7 +18,7 @@ export default class CustomModal extends Component {
       activeItem: this.props.activeItem,
     };
   }
-
+  
   handleChange = (e) => {
     let { name, value } = e.target;
 
