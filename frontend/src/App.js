@@ -86,9 +86,10 @@ class App extends Component {
           className={`bus-stops-title mr-2 ${
             this.state ? "bus-stops" : ""
           }`}
-          title={item.title}
         >
-          {item.title}
+          {item.title} &nbsp;
+          {item.latitude} &nbsp;
+          {item.longitude} &nbsp;
         </span>
         <span>
           <button
@@ -111,6 +112,13 @@ class App extends Component {
   render() {
     return (
       <main className="container">
+        <div className="mb-4">
+          <div>
+            <a href="http://localhost:5173/" target="_blank" rel="noopener noreferrer">
+            <button className="btn btn-secondary">Map View</button>
+            </a>
+          </div>
+        </div>
         <h1 className="text-white text-uppercase text-center my-4">Bus Stop Point</h1>
         <div className="row">
           <div className="col-md-6 col-sm-10 mx-auto p-0">
