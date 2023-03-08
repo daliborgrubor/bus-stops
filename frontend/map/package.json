@@ -1,5 +1,5 @@
 {
-  "name": "geographic",
+  "name": "draw-features",
   "dependencies": {
     "ol": "7.3.0"
   },
