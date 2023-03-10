@@ -3,7 +3,6 @@ import Map from 'ol/Map.js';
 import View from 'ol/View.js';
 import {OSM, Vector as VectorSource} from 'ol/source.js';
 import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer.js';
-import {fromLonLat} from 'ol/proj.js';
 
 const raster = new TileLayer({
   source: new OSM(),
@@ -15,17 +14,12 @@ const vector = new VectorLayer({
   source: source,
 });
 
-const banjaluka = [17.1909521, 44.7721338]; // longitude first, then latitude
-// since we are using OSM, we have to transform the coordinates...
-const banjalukaWebMercator = fromLonLat(banjaluka);
-
-
 const map = new Map({
   layers: [raster, vector],
   target: 'map',
   view: new View({
-    center: banjalukaWebMercator,
-    zoom: 15,
+    center: [1920000, 5590000],
+    zoom: 12,
   }),
 });
 
