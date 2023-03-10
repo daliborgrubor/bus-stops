@@ -15,8 +15,7 @@ const vector = new VectorLayer({
   source: source,
 });
 
-const banjaluka = [17.1909521, 44.7721338]; // longitude first, then latitude
-// since we are using OSM, we have to transform the coordinates...
+const banjaluka = [17.1909521, 44.7721338]; 
 const banjalukaWebMercator = fromLonLat(banjaluka);
 
 
@@ -31,7 +30,7 @@ const map = new Map({
 
 const typeSelect = document.getElementById('type');
 
-let draw; // global so we can remove it later
+let draw; 
 function addInteraction() {
   const value = typeSelect.value;
   if (value !== 'None') {

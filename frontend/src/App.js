@@ -11,8 +11,8 @@ class App extends Component {
       modal: false,
       activeItem: {
         title: "",
-        latitude: "",
         longitude: "",
+        latitude: "",
       },
     };
   }
@@ -53,7 +53,7 @@ class App extends Component {
   };
 
   createItem = () => {
-    const item = { title: "", latitude: "", longitude: "" };
+    const item = { title: "", longitude: "",  latitude: "" };
 
     this.setState({ activeItem: item, modal: !this.state.modal });
   };
@@ -88,8 +88,8 @@ class App extends Component {
           }`}
         >
           {item.title} &nbsp;
-          {item.latitude} &nbsp;
           {item.longitude} &nbsp;
+          {item.latitude} &nbsp;
         </span>
         <span>
           <button

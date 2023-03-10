@@ -51,17 +51,6 @@ export default class CustomModal extends Component {
               />
             </FormGroup>
             <FormGroup>
-              <Label for="bus-stop-latitude">Latitude</Label>
-              <Input
-                type="text"
-                id="bus-stop-latitude"
-                name="latitude"
-                value={this.state.activeItem.description}
-                onChange={this.handleChange}
-                placeholder="Enter Latitude"
-              />
-            </FormGroup>
-            <FormGroup>
               <Label for="bus-stop-longitude">Longitude</Label>
               <Input
                 type="text"
@@ -70,6 +59,17 @@ export default class CustomModal extends Component {
                 value={this.state.activeItem.description}
                 onChange={this.handleChange}
                 placeholder="Enter Longitude"
+              />
+            </FormGroup>
+            <FormGroup>
+              <Label for="bus-stop-latitude">Latitude</Label>
+              <Input
+                type="text"
+                id="bus-stop-latitude"
+                name="latitude"
+                value={this.state.activeItem.description}
+                onChange={this.handleChange}
+                placeholder="Enter Latitude"
               />
             </FormGroup>
           </Form>
