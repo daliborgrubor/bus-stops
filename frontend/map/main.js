@@ -24,7 +24,7 @@ const map = new Map({
   target: 'map',
   view: new View({
     center: banjalukaWebMercator,
-    zoom: 15,
+    zoom: 2,
   }),
 });
 
